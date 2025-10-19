@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff; 
+  color: #000;
+  
+}
+
+
+
+
+
+
+
+
+
+header.nav-link {
+  position: relative; 
+  display: flex;
+  justify-content: center;         
+  align-items: center;
+  padding: 40px 40px;
+  background: #111;
+}
+
+header.nav-link .logo {
+  height: 100px;
+  width: 150px;
+}
+
+header.nav-link nav {
+  position: absolute;
+  left: 40px;    
+  display: flex;
+  gap: 20px;
+}
+
+header.nav-link nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titre {
+  position: relative;
+  display: flex;
+  left: 15px;
+  right: auto;
+  font-size: 32px;
+  margin: 40px 0 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.produit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.produit-card {
+  background: #111; 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.produit-card img {
+  width: 120px; 
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.description {
+  flex: 1;
+  text-align: left;
+  color: #fff;
+}
+
+.produit-nom {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.prix {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+.btn-consulter {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #e60000;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.product-wrapper {
+  background: #222;      
+  border-radius: 12px;
+  padding: 40px;
+  margin: 280px auto;
+  max-width: 1000px;     
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.item-image img {
+  width: 350px;
+  border-radius: 10px;
+
+}
+
+.item-details {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+
+.item-details h1 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.item-details .description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0e351d;
+}
+
+
+
+
+.item-details button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.titre1 {
+  position: relative;
+  display: flex;
+  font-weight: bold;
+  color: #000;
+  justify-content: center;
+  margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-panneau {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  min-height: 80vh;         
+  background: #f5f5f5;       
+  padding: 20px;
+}
+
+
+.add-produits {
+  background: #353535;
+  padding: 30px 40px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
+.add-produits h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+
+.add-produits label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #f5f5f5;
+}
+
+
+.add-produits button {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+}
+

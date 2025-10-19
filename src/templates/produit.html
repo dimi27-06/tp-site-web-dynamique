@@ -1,0 +1,39 @@
+{{define "produit"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetShop</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <header class="nav-link">
+    <img class="logo" src="/static/img/logo/1.png" alt="StreetShop Logo">
+    <nav>
+      <a href="/home">Accueil</a>
+      <a href="/add">Add</a>
+    </nav>
+  </header>
+
+  <main class="product-wrapper">
+    <div class="item-container">
+      <div class="item-image">
+        <img src="{{.Image}}" alt="{{.Nom}}">
+      </div>
+      <div class="item-details">
+        <h1>{{.Nom}}</h1>
+        <p class="description">{{.Description}}</p>
+           
+    
+          <p class="price">{{.Prix}} €</p>
+  
+
+        <button>Ajouter au Panier</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+{{end}}

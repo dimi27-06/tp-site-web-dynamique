@@ -1,0 +1,40 @@
+{{define "add"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter un produit - StreetShop</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="nav-link">
+    <img class="logo" src="/static/img/logo/1.png" alt="StreetShop Logo">
+    <nav>
+      <a href="/home">Accueil</a>
+      <a href="/add">Add</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="titre1">Ajouter un produit sur notre site</h2>
+
+    <div class="add-panneau">
+      <div class="add-produits">
+        <form action="/add" method="POST">
+          <label for="nom">Nom :</label><br>
+          <input type="text" id="nom" name="nom" required><br><br>
+
+          <label for="description">Description :</label><br>
+          <textarea id="description" name="description" required></textarea><br><br>
+
+          <label for="prix">Prix (€) :</label><br>
+          <input type="number" id="prix" name="prix" step="0.01" required><br><br>
+          <button type="submit">Ajouter</button>
+        </form>
+      </div>
+    </div>
+    
+  </main>
+</body>
+</html>
+{{end}}
